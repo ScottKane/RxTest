@@ -6,7 +6,7 @@ events.Subscribe((ref TestEvent e) =>
 {
     Console.WriteLine("A");
     Console.WriteLine($"A Handled: {e.Handled}");
-    e.Handled = true;
+    // e.Handled = true;
     Console.WriteLine($"A Handled: {e.Handled}");
 });
 events.Subscribe((ref TestEvent e) =>
